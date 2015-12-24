@@ -5,7 +5,22 @@ angular.module('bengaleerasanaApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
-    }];
+    },
+	{
+      'title': 'Take a Test',
+      'link': '/takeatest'
+    },
+	{
+      'title': 'View Results',
+      'link': '/viewresults'
+    },
+	{
+      'title': 'Contact Us',
+      'link': '/contactus'
+    }
+];
+
+
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
