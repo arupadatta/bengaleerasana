@@ -6,15 +6,11 @@ angular.module('bengaleerasanaApp')
       'title': 'Home',
       'link': '/'
     },
-	{
-      'title': 'Take a Test',
-      'link': '/takeatest'
-    },
-	{
-      'title': 'View Results',
-      'link': '/viewresults'
-    },
-	{
+      {
+        'title': 'Contribute Recipe',
+        'link': '/recipe'
+      },
+		{
       'title': 'Contact Us',
       'link': '/contactus'
     }

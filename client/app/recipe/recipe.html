@@ -1,0 +1,117 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+ 		<div class="header">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+					<h1>Welcome</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dolor vel sapien feugiat lacinia. In et felis turpis. Sed ac erat ut libero volutpat condimentum. Pellentesque ut dolor vel sapien feugiat lacinia. In et felis turpis. Sed ac erat ut libero volutpat condimentum.</p>
+					<p>Pellentesque ut dolor vel sapien feugiat lacinia. In et felis turpis. Sed ac erat ut libero volutpat condimentum.</p>
+
+				    <ul class="list-inline">
+				    <li><a href="#" class="btn btn-trans btn-md"> Buy Online</a></li>
+				    <li><a href="#" class="btn btn-primary btn-md"> Read Reviews</a></li>
+				    </ul>
+
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInRight" align="center">
+
+					<img class="img-responsive" src="../../../assets/images/devices.png"/>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<div class="container" ng-controller='RecipeCtrl'>
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-10">
+			<div class="col-md-10 col-md-offset-2">
+				<div class="widget-box">
+					<div>
+						  <div class="widget-title">
+								<span class="icon">
+									<i class="fa fa-align-justify"></i>
+								</span>
+								<h5>Recipe</h5>
+						 </div>
+					</div>
+					<div clsss="login-center">
+							<form class="form-horizontal">
+								  <div class="form-group">
+									  <label for="recipename" class="col-sm-5 col-md-5 col-lg-3 control-label">Recipe Name</label>
+									 <div  class="col-sm-5 col-md-5 col-lg-6">
+											<input type="text" class="form-control form-control-inline" id="recipename" ng-model="recipename" width="100" placeholder="recipename">
+									  </div>
+								  </div>
+
+								  <div class="form-group">
+									  <label for="description" class="col-sm-5 col-md-5 col-lg-3 control-label">Description</label>
+									 <div  class="col-sm-5 col-md-5 col-lg-6">
+											<input class="form-control form-control-inline" id="description" ng-model="description" width="150" placeholder="description">
+									  </div>
+								  </div>
+                <div class="form-group">
+                  <label for="indgredients" class="col-sm-5 col-md-5 col-lg-3 control-label">Indgredients</label>
+                  <div  class="col-sm-5 col-md-5 col-lg-6">
+                    <textarea class="form-control" rows="10" cols="250" ng-model="indgredients"></textarea>
+                  </div>
+                </div>
+								  <div class="form-group">
+										<label for="videopath" class="col-sm-5 col-md-5 col-lg-3 control-label">Videopath</label>
+									 <div  class="col-sm-5 col-md-5 col-lg-6">
+										  <input type="text" ng-model="videopath" class="form-control form-control-inline-email" id="videopath" placeholder="videopath">
+										</div>
+								  </div>
+								   <div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" ng-click='submit()' class="btn btn-primary btn-sm"><strong>Submit</strong></button>
+										</div>
+								  </div>
+							</form>
+						</div>
+					</div>	 <!-- <div class="widget-box"> -->
+				</div> 	<!-- <div class="widget-content nopadding"> -->
+			</div> 	<!-- <div class="col-xs-12"> -->
+		</div> <!--<div class="row"> -->
+	</div> 	<!--<div class="container-fluid">-->
+</div> 	 <!-- container -->
+
+
+
+
+		<!-- FOOTER -->
+
+	<div class="footer">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-lg-4 col-md-4">
+				<h1>LOGO</h1>
+				<p>Since 2015</p>
+				<p><em>'Delivering apps for low cost and maximum fun.'</em></p>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+				<h1>GET IN TOUCH:</h1>
+				<p><i class="fa fa-phone"></i> 011111 222 333</p>
+				<p><i class="fa fa-envelope-o"></i> <a href="mailto:info@appname.com">info@appname.com</a></p>
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+				<h1>ABOUT US:</h1>
+				<p>Delivering high quality apps for low cost and maximum fun.</p>
+				<p>Company name &copy; 2015</p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- END FOOTER -->
