@@ -2,6 +2,7 @@
 
 angular.module('bengaleerasanaApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
+    console.log("I am in navbar controller");
     $scope.menu = [{
       'title': 'Home',
       'link': '/'

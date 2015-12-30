@@ -11,6 +11,7 @@ angular.module('bengaleerasanaApp')
       if(form.$valid) {
         Auth.createUser({
           name: $scope.user.name,
+		      grade:$scope.user.grade,
           email: $scope.user.email,
           password: $scope.user.password
         })

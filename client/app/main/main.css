@@ -33,10 +33,11 @@
 #customcss
 
 div#navbar-main{
-	font:arial	
+	font:arial
 }
 body {
   padding-top: 50px;
+  background-color: darkgray;
 }
 
 .em-text{
@@ -80,7 +81,7 @@ section{
 	#background:#1b222a url(../../assets/images/AdobeStock_1604465_WM.jpeg) no-repeat top center;
 	#background:#1b222a url(hero-background-banner-wireless-plus2-1600x600.jpg) no-repeat top center;
 	#background:#1b222a url(horse_fire-wallpaper-1920x1080.jpg) no-repeat top center;
-	
+
 	color:#fff;
 	height:250px;
 	overflow:none;

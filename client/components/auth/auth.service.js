@@ -58,9 +58,10 @@ angular.module('bengaleerasanaApp')
        */
       createUser: function(user, callback) {
         var cb = callback || angular.noop;
-
+        console.log("2. I am in the Auth.createUser which is still at the client side and is an Angular Factory");
         return User.save(user,
           function(data) {
+            console.log("5. Returned from the server call");
             $cookieStore.put('token', data.token);
             currentUser = User.get();
             return cb(user);
