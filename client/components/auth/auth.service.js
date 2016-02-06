@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('bengaleerasanaApp')
-  .factory('Auth', function Auth($location, $rootScope, $http, User, $cookieStore, $q) {
+  .factory('Auth', function Auth($location, $rootScope, $http, User, $cookieStore, $q, $route) {
     var currentUser = {};
     if($cookieStore.get('token')) {
       currentUser = User.get();
@@ -17,6 +17,7 @@ angular.module('bengaleerasanaApp')
        * @return {Promise}
        */
       login: function(user, callback) {
+		  console.log("I am inside login");
         var cb = callback || angular.noop;
         var deferred = $q.defer();
 
@@ -46,7 +47,9 @@ angular.module('bengaleerasanaApp')
        */
       logout: function() {
         $cookieStore.remove('token');
-        currentUser = {};
+		$location.path('/');
+		$route.reload();
+		currentUser = {};
       },
 
       /**
@@ -108,6 +111,7 @@ angular.module('bengaleerasanaApp')
        * @return {Boolean}
        */
       isLoggedIn: function() {
+ 		  console.log("I am inside isLoggedIn :"+currentUser.hasOwnProperty('role'));
         return currentUser.hasOwnProperty('role');
       },
 

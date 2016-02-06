@@ -33,14 +33,25 @@ p, h1 {
 
 .header {
  padding: 140px 0 60px;
- background: url(../assets/images/bg.jpg) no-repeat center center;
- background-size: cover;
  width: 100%;
  border-bottom: 2px solid #c9c9c9;
+ }
+
+.header::after{
+ content: "";
+ background: url(../assets/images/bengaleefoods1.jpg) no-repeat center center;
+ background-size: cover;
+ opacity: 0.3;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ position: absolute;
+ z-index: -1;
 }
 
 .header h1 {
- color: white;
+ color: black;
  font-family: 'Pacifico', cursive;
  font-size: 7.5em;
 }
@@ -65,15 +76,15 @@ p, h1 {
  .header h1 {
  font-size:5em;
  }
- 
+
  .header p {
   font-size:1em;
  }
- 
+
  .header .btn {
   padding: 5px 12px 5px 12px;
  }
- 
+
  .header img {
   padding-top:10%;
  }
