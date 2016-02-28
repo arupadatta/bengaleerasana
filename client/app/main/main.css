@@ -225,4 +225,20 @@ footer p{
 		padding-top:20px;
 	}
 
+  /* Carousel Controler*/
+  #slides_control > div{
+    height: 200px;
+  }
+  img{
+    margin:auto;
+    width: 400px;
+  }
+  #slides_control {
+    position:absolute;
+    width: 400px;
+    left:50%;
+    top:20px;
+    margin-left:-200px;
+  }
+
 }
